@@ -1,0 +1,184 @@
+.navbar {
+    /* Display do tipo flex e propriedade flex-flow são propriedades usadas para definir
+    a posição dos elementos na página, semelhante ao position */
+    display: flex;
+    /* row wrap = quebra de linha */
+    flex-flow: row wrap;
+    height: 100px;
+    background: rgb(152, 58, 153);
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    flex: 30%;
+    margin-left: 10%;
+    /* border:1px solid red;  */
+    text-align: left;
+
+}
+
+.logo h1 {
+    font-family: 'times new roman', cursive;
+    color: rgb(245, 203, 245);
+    font-size: 40px;
+}
+
+.menu {
+    /* Propriedade flex, semelhante ao width */
+    flex: 30%;
+    /* border:1px solid green;*/
+    text-align: right;
+    padding: 20px;
+}
+
+.menu a {
+    color: rgb(245, 203, 245);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+.menu a:hover {
+    color: #da56c2;
+    border-top: 4px solid #88066a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    background-color:  rgb(235, 213, 225);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:200,400,700|Open+Sans&display=swap');
+
+body {
+  line-height: 1.5;
+}
+
+.blog {
+  font-family: 'Lato', sans-serif;
+}
+
+.blog h1,
+.blog h2,
+.blog h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+article {
+  margin: 32px;
+}
+
+.post-title {
+  margin: 12px 0;
+  font-size: 28px;
+}
+
+.post-img {
+  position:static;
+  margin: auto;
+  overflow: hidden;
+}
+
+.post-img img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.author-info {
+  display: flex;
+  justify-content:left;
+  margin-bottom: 16px;
+}
+
+.name {
+  color: #f39c12;
+  transition: 0.5s;
+}
+
+.name:hover {
+  color: #100c08;
+}
+
+.date {
+  font-style: italic;
+  display: block;
+  margin-top: 5px;
+}
+
+.post-content-p {
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+
+.post-content-hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.post-tags {
+  margin-top: 48px;
+}
+
+.post-tags-container {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1281px) {
+  .blog-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  article {
+    margin-bottom: 32px;
+    width: 65%;
+  }
+  
+  .post-container {
+    margin-left: 96px;
+  }
+  
+  .post-content,
+  .post-tags {
+    margin-left: 32px;
+  }
+  
+  .post-title {
+    display: inline-block;
+    margin-top: 16px;
+  }
+  
+  .date {
+    display: inline;
+    margin-left: 12px;
+  }
+  
+  
+}
+  .comp-p{
+    color: #da56c2;
+  }
+
+  .icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 10px 20px;
+    
+  }
