@@ -1,8 +1,6 @@
 .navbar {
-    /* Display do tipo flex e propriedade flex-flow são propriedades usadas para definir
-    a posição dos elementos na página, semelhante ao position */
+
     display: flex;
-    /* row wrap = quebra de linha */
     flex-flow: row wrap;
     height: 100px;
     background: rgb(152, 58, 153);
@@ -15,7 +13,6 @@
 .logo {
     flex: 30%;
     margin-left: 10%;
-    /* border:1px solid red;  */
     text-align: left;
 
 }
@@ -27,9 +24,8 @@
 }
 
 .menu {
-    /* Propriedade flex, semelhante ao width */
+
     flex: 30%;
-    /* border:1px solid green;*/
     text-align: right;
     padding: 20px;
 }

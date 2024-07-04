@@ -1,20 +1,15 @@
 .carousel-body {
     height: 100vh;
-    /* Ocupa a altura total da janela */
     margin: 0;
-    /* Remove margens padrão */
     display: grid;
     justify-content: center;
-    /* Centraliza o conteúdo horizontalmente */
     align-items: center;
-    /* Centraliza o conteúdo verticalmente */
     background-color: #f0f0f0;
-    /* Adiciona uma cor de fundo para visualização */
 }
 
 main#carousel {
     width: 80vw;
-    /* Ajuste conforme necessário */
+
     height: 500px;
     display: flex;
     align-items: center;

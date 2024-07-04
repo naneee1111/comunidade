@@ -1,4 +1,3 @@
-/* Modificações da página até o limite máximo de 1005px de redimensionamento */
 @media screen and (max-width:1005px) {
     .navbar {
         position: relative;
