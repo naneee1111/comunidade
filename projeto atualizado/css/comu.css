@@ -1,0 +1,213 @@
+.navbar {
+    /* Display do tipo flex e propriedade flex-flow são propriedades usadas para definir
+    a posição dos elementos na página, semelhante ao position */
+    display: flex;
+    /* row wrap = quebra de linha */
+    flex-flow: row wrap;
+    height: 100px;
+    background: rgb(152, 58, 153);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+}
+
+.logo {
+    flex: 30%;
+    margin-left: 10%;
+    /* border:1px solid red;  */
+    text-align: left;
+
+}
+
+.logo h1 {
+    font-family: 'times new roman', bold;
+    color: rgb(245, 203, 245);
+    font-size: 40px;
+}
+
+.menu {
+    /* Propriedade flex, semelhante ao width */
+    flex: 30%;
+    /* border:1px solid green;*/
+    text-align: right;
+    padding: 20px;
+}
+
+.menu a {
+    color: rgb(245, 203, 245);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+.menu a:hover {
+    color: #da56c2;
+    border-top: 4px solid #88066a;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(235, 213, 225);
+}
+
+.comunidade {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    min-height: 500px;
+    min-width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+
+.comunidade::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://thumbor.novaescola.org.br/OH8yTZaAJ1PsOj5SaBptKDXZO2o=/nova-escola-producao.s3.amazonaws.com/kEsvJdSPAUwBSUQVBzsauUtvf3rGP9cBVuD5jXWMWkYxwzcHssFNkNPQYykT/dia-das-mulheres-como-trabalhar-na-escola.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+    z-index: 1;
+}
+
+.comunidade>* {
+    position: relative;
+    z-index: 2;
+}
+
+.comunidade h2 {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #901fdb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0.1em 0.1em 0.2em black
+}
+
+.comunidade p {
+    color: rgb(247, 170, 247);
+    font-size: 20px;
+    text-shadow: 0.1em 0.1em 0.2em black
+}
+
+.comentarios {
+    background-color: #d48ef2;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.comentario-form .form-group {
+    margin-bottom: 15px;
+}
+
+.comentario-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.comentario-form input,
+.comentario-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0d0108;
+    border-radius: 4px;
+}
+
+.btn-submit {
+    background-color: #d84bb9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.btn-submit:hover {
+    background-color: #b30068;
+}
+
+.lista-comentarios {
+    margin-top: 20px;
+}
+
+.comentario-item,
+.resposta-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.resposta-item {
+    margin-left: 20px;
+}
+
+.comentario-form .form-group {
+    margin-bottom: 15px;
+}
+
+.comentario-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.comentario-form input,
+.comentario-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.comentario-form input:focus,
+.comentario-form textarea:focus {
+    border-color: #4d0342;
+    outline: none;
+    box-shadow: 0 0 5px rgba(2, 8, 14, 0.3);
+}
+
+button {
+    margin-top: 10px;
+    background-color: #d84bb9;
+    ;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #b30068;
+}
